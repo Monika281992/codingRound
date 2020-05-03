@@ -68,7 +68,7 @@ public class flightBookingTest {
             driver.findElement(By.id("ToTag")).sendKeys(Keys.ENTER);
             driver.findElement(By.id("DepartDate")).clear();
             driver.findElement(By.id("DepartDate")).click();
-            driver.findElement(By.xpath("a[contains(@class,'ui-state-default ui-state-highlight')]")).click();
+            driver.findElement(By.xpath("a[contains(@class,'ui-state-default ui-state-highlight ui-state-active')]")).click();
             
             //all fields filled in. Now click on search
             driver.findElement(By.id("SearchBtn")).submit();  
